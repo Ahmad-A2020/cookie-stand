@@ -23,6 +23,7 @@ let seattle={
     min:23,
     max:65,
     avg:6.3,
+    
     customHur:function(){        
         seatleCookies=rand(this.max,this.min, this.avg);
         // seatleCookies= seatleCustoHur.map(x => x * this.avg);
@@ -37,11 +38,13 @@ let headOf=document.createElement('p');
 parent.appendChild(headOf);
 headOf.textContent= seattle.name
 let odrerList=document.createElement('ul'); 
-parent.appendChild(odrerList); 
+parent.appendChild(odrerList);
+let cokklieSeatle=seattle.customHur()
+ 
 for (let k=0; k< time.length;k++){
     let listEle=document.createElement('li');
     parent.appendChild(listEle);
-    listEle.textContent=time[k]+" : "+seattle.customHur()[k];     
+    listEle.textContent=time[k]+" : "+cokklieSeatle[k]+"    cookies";     
 }
 // console.log(className)
 console.log(seattle.customHur());
@@ -66,10 +69,11 @@ parent.appendChild(headOfTokyo);
 headOfTokyo.textContent= tokyo.name
 let odrerListTokyo=document.createElement('ul'); 
 parent.appendChild(odrerListTokyo); 
+let cokklieTokyo=tokyo.customHur()
 for (let f=0; f< time.length;f++){
     let listEleTokyo=document.createElement('li');
     parent.appendChild(listEleTokyo);
-    listEleTokyo.textContent=time[f]+" : "+tokyo.customHur()[f];     
+    listEleTokyo.textContent=time[f]+" : "+cokklieTokyo[f]+"    cookies";     
 }
 
 
@@ -92,11 +96,13 @@ let headOfDubai=document.createElement('p');
 parent.appendChild(headOfDubai);
 headOfDubai.textContent= dubai.name
 let odrerListDubai=document.createElement('ul'); 
-parent.appendChild(odrerListDubai); 
+parent.appendChild(odrerListDubai);
+let cokklieDubai=dubai.customHur()
+
 for (let f=0; f< time.length;f++){
     let listEleDubai=document.createElement('li');
     parent.appendChild(listEleDubai);
-    listEleDubai.textContent=time[f]+" : "+dubai.customHur()[f];     
+    listEleDubai.textContent=time[f]+" : "+cokklieDubai[f]+"    cookies";     
 }
 
 // Paris city object 
@@ -119,10 +125,13 @@ parent.appendChild(headOfParis);
 headOfParis.textContent= Paris.name
 let odrerListParis=document.createElement('ul'); 
 parent.appendChild(odrerListParis); 
+let cokklieParis=Paris.customHur()
+
+
 for (let f=0; f< time.length;f++){
     let listEleParis=document.createElement('li');
     parent.appendChild(listEleParis);
-    listEleParis.textContent=time[f]+" : "+Paris.customHur()[f];     
+    listEleParis.textContent=time[f]+" : "+cokklieParis[f]+"    cookies";   
 }
 
 // Lima city object 
@@ -145,8 +154,11 @@ parent.appendChild(headOfLima);
 headOfLima.textContent= Lima.name
 let odrerListLima=document.createElement('ul'); 
 parent.appendChild(odrerListLima); 
+let cokklieLima=Lima.customHur()
+
+
 for (let f=0; f< time.length;f++){
     let listEleLima=document.createElement('li');
     parent.appendChild(listEleLima);
-    listEleLima.textContent=time[f]+" : "+Lima.customHur()[f];     
+    listEleLima.textContent=time[f]+" : "+cokklieLima[f]+"    cookies"; 
 }
