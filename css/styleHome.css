@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: salmon;
+}
+
+header{
+    background-color: rgb(120, 169, 243);
+    height: 100px; 
+    width: 100%;
+    /* display: flex; */
+   
+}
+header img{
+    float: left;
+    width: 300px;
+}
+h1{
+    position: relative;
+    top: 50%;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   width: 25%;
+   height: 100px;   
+   font-weight: bold;
+   font-style: oblique;
+   font-size: 20px;
+   margin: 0px auto 0px auto;
+   text-align: center;
+   
+}
+ul{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+
+}
+
+header nav ul li{
+    float:right;
+    margin: 20px;
+    
+}
+header nav ul li a{
+    color: blue;
+    text-decoration: none;
+    padding: 5PX;
+    
+}
+h2{
+    font-weight: 700;
+    padding: 5PX;
+}
+
+p{
+    position: relative;
+    left: 10%;
+    line-height: 30px;
+    padding: 30PX;
+    padding-top: 10PX;
+    background-image: url(family.jpg);
+    background-repeat: no-repeat;
+    height: 500PX;
+    
+}
+
+
+.column{
+    position: relative;
+    width:25%;
+    float:left;
+    text-align: center;
+    padding: 10px;
+    top: 100%;
+
+}
+footer{
+    clear: both;
+    /* background-image: url(chinook.jpg);
+    height: 1200 px; */
+}
