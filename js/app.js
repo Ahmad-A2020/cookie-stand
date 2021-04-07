@@ -103,6 +103,7 @@ Paris.render();
 let Lima=new city('Lima',2,16,4.6);
 Lima.render();
 
+
 // Total function for the footer: 
 function total() {
     let sum=[];
@@ -132,8 +133,39 @@ function footer() {
 
     
 }
-// console.log(cities);
+console.log(cities);
 footer();
+
+let addResturant=document.getElementById('cookiesForm');
+
+addResturant.addEventListener('submit',newResturanr);
+function newResturanr (event) {
+    event.preventDefault();
+    console.log(event);
+    let nameN=event.target.cityName.value;
+    let minum=event.target.min.value;
+    let maxN=event.target.max.value;
+    let avgN=event.target.avg.value;
+    // console.log(nameN,minN,maxN,minum);
+    console.log(minum);
+    console.log(maxN);
+    console.log(avgN);
+    let newRestrantInst=new city(nameN,minum,maxN,avgN);
+    // newRestrantInst.render();
+    // let newx=new city("new",10,40,2);
+    // newx.render();
+    table.textContent='';
+    tableHeader();
+    for (let i=0;i<cities.length;i++){
+        cities[i].render();
+
+
+    }
+    footer(); 
+
+
+    
+}
 
 
 
